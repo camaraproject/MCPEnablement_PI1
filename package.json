@@ -1,0 +1,43 @@
+{
+  "name": "@zodiac/network-api-mcp",
+  "version": "0.0.3",
+  "license": "MIT/X11",
+  "type": "module",
+  "engines": {
+    "node": ">=24.14.0"
+  },
+  "bin": {
+    "mcp-server": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "inspector": "node ./run-inspector.ts",
+    "lint": "eslint .",
+    "test": "echo 'no tests configured yet'",
+    "type-check": "tsc --noEmit",
+    "licenses": "nlf | grep '^LICENSES:'"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^2.1.0",
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.9.3",
+    "dotenv": "^17.4.2",
+    "eslint": "^10.5.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "eslint-plugin-simple-import-sort": "^13.0.0",
+    "nlf": "^2.1.1",
+    "prettier": "^3.8.4",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.61.1",
+    "vite": "^8.0.16",
+    "vite-plugin-node": "^8.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "undici": "^8.5.0",
+    "zod": "^4.4.3"
+  },
+  "packageManager": "yarn@4.13.0"
+}
